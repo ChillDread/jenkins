@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts
 USER root
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y python3 python-pip python3-pip make build-essential libssl-dev zlib1g-dev && \
+    apt-get install -y python3 python-pip python3-pip make build-essential libssl-dev zlib1g-dev libtk8.5 libgdm-dev libdb4o-cil-dev libpcap-dev && \
     apt-get install -y libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm && \
     apt-get install -y libncurses5-dev  libncursesw5-dev xz-utils tk-dev && \
     pip3 install pipenv && \
